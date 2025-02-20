@@ -90,10 +90,9 @@ body {
   display: inline-block;
 }
 
-.idea-6 span{
+.idea-6 span {
   font-size: 15rem;
 }
-
 
 .six {
   position: relative;
@@ -105,13 +104,11 @@ body {
   display: inline-block;
   height: 350px;
   max-width: 100%;
-  /* height: auto; */
 }
 
 .six .hat {
   left: 41.5%;
   position: absolute;
-  /* transform: scale(0.1); */
   top: -35%;
   width: 80px;
 }
@@ -226,27 +223,51 @@ body {
 }
 
 /* Media Queries */
-@media screen and (max-height: 1000px) {
+@media screen and (max-width: 1200px) {
+  .container {
+    width: 95%;
+  }
+  
+  .four .text-box {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .container > div {
+    top: 15vh;
+  }
+
+  .four .text-box {
+    width: 90%;
+  }
+
   .six .hat {
     left: 40%;
+    width: 70px;
   }
 }
 
-@media screen and (max-height: 800px) {
-  .six .hat {
-    left: 37%;
+@media screen and (max-width: 600px) {
+  .container > div {
+    top: 10vh;
   }
-}
 
-@media screen and (max-height: 700px) {
   .six .hat {
-    left: 32%;
+    left: 35%;
+    width: 60px;
   }
-}
 
-@media screen and (max-height: 850px) and (max-width: 450px) {
-  .six .hat {
-    left: 32%;
+  .wish-hbd {
+    font-size: 2.5em;
+  }
+
+  .wish h5 {
+    font-size: 1.6rem;
+  }
+
+  .nine p {
+    font-size: 1.8rem;
   }
 }
 
@@ -260,7 +281,7 @@ body {
   }
 
   .text-box .fake-btn {
-    bottom: -38px;
+    bottom: -40px;
     right: 5px;
   }
 
@@ -269,11 +290,10 @@ body {
   }
 
   .idea-6 span {
-    font-size: 10rem;
+    font-size: 12rem;
   }
 
   .six .hat {
-    /* top: -20px; */
     width: 50px;
   }
 
@@ -287,6 +307,19 @@ body {
 
   .nine p {
     font-size: 1.5rem;
-    font-weight: lighter;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .wish-hbd {
+    font-size: 2em;
+  }
+
+  .wish h5 {
+    font-size: 1.2rem;
+  }
+
+  .nine p {
+    font-size: 1.3rem;
   }
 }
